@@ -1,0 +1,52 @@
+footer{
+    background-color: rgb(43, 45, 66);
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.legal-links{
+    list-style: none;
+    text-align: left;
+}
+hr{
+    background-color: rgb(141, 153, 174);
+    height: 30px;
+    border: none;
+    width: 2px;
+}
+span{
+    color: rgb(239, 35, 60);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h2{
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact-us p a{
+    color: rgb(141, 153, 174);
+    
+}
+.contact-us li a{
+    text-decoration: none;
+    color: white;
+}
+.contact-us {
+    list-style: none;
+}
