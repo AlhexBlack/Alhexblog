@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    padding: 0 20px;
 }
 .search-input{
     padding: 10px;

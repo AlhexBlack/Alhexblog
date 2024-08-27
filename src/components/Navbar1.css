@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 div nav div{
     display: flex;
     justify-content: space-between;
@@ -8,6 +11,8 @@ div nav div{
 }
 div nav h2 a{
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: rgb(239, 35, 60);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -32,4 +37,48 @@ div nav ul li a:hover{
 }
 .active{
     color: rgb(239, 35, 60);
+}
+.sideLinks{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(43, 45, 66, 0.767);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(1px);
+    margin-top: 0;
+    padding: 20px;
+    color: white;
+}
+.sideLinks li a{
+    color: white;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.hamburger:hover{
+    background-color: rgba(239, 35, 59, 0.486);
+    border-radius: 5px; 
+}
+.cancel:hover{
+    background-color: rgba(239, 35, 59, 0.486);
+    border-radius: 5px; 
+}
+.searchDiv{
+    padding: 0;
+}
+
+@media (max-width: 950px){
+    .topLinks{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+
 }

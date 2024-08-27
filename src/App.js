@@ -12,7 +12,7 @@ import NotFound from './pages/NotFound';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import { useState } from 'react';
-
+import SearchBar from './components/SearchBar';
 
 function App() {
   const [searchResults, setSearchResults] = useState(null);
@@ -26,6 +26,7 @@ function App() {
     <div className='app'>
         <Navbar1 onSearchResults={handleSearchResults}/>
             <main>
+            <SearchBar onSearchResults={handleSearchResults}/>
               {searchResults !== null ? (
               searchResults.length > 0 ? (
               <ul>
