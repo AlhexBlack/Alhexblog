@@ -9,8 +9,8 @@ function Footer ({onSearchResults}) {
     <footer>
         <div className="footer-content">
 
-        <div> 
-        <h2>Motor<span>Mentor</span></h2>      
+        <div className='logo'> 
+        <p>Motor<span>MentorHub</span></p>      
         </div>
 
           <div className='footer-content-div'>   
@@ -48,10 +48,8 @@ function Footer ({onSearchResults}) {
          </div>  
  
 
-        <div>
-        <ul className="legal-links">
+        <div className="legal-links">
             <SearchBar onSearchResults={onSearchResults}/>
-        </ul>
         </div>
         </div>
         <div className='contact-us'>

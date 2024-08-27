@@ -2,7 +2,7 @@ const blogPosts = [
     {
         id: 1,
         imgSrc: "",
-        title: "Understanding Car Engines",
+        title: "Alex",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tenetur ad possimus eius cupiditate odio dolorum, deserunt numquam quibusdam sapiente corporis, cumque voluptates! In quasi sed illum sunt, cumque reprehenderit?",
         author: "Admin"
     },
