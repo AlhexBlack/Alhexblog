@@ -62,6 +62,7 @@ span{
 }
 .contact-us {
     list-style: none;
+    font-size: 1rem;
 }
 
 @media (max-width: 515px){

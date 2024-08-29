@@ -1,5 +1,6 @@
-*{
+html, body{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 div nav div{
     display: flex;
@@ -39,7 +40,6 @@ div nav ul li a:hover{
     color: rgb(239, 35, 60);
 }
 .sideLinks{
-    display: none;
     position: fixed;
     flex-direction: column;
     top: 0;
@@ -48,10 +48,13 @@ div nav ul li a:hover{
     width: 250px;
     background-color: rgba(43, 45, 66, 0.767);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(10px);
     margin-top: 0;
     padding: 20px;
     color: white;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .sideLinks li a{
     color: white;
@@ -71,8 +74,12 @@ div nav ul li a:hover{
 .searchDiv{
     padding: 0;
 }
+.sideLinks.active {
+    transform: translateX(0);
+    opacity: 1;
+}
 
-@media (max-width: 950px){
+@media (max-width: 1000px){
     .topLinks{
         display: none;
     }
