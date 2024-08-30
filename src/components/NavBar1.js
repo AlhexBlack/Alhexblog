@@ -75,7 +75,7 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          {/* Hamburger Icon */}
+          
           <div onClick={toggleSidenav} className="hamburger">
             <FontAwesomeIcon icon={faBars} />
           </div>

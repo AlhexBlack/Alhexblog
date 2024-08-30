@@ -9,7 +9,7 @@
     background-position: top;
 }
 
-@media (max-width: 1900px){
+@media (max-width: 1460px){
     .banner{
     background-image: url(/public/images/pcmmh2.jpg);
     }
