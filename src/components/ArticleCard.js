@@ -1,18 +1,19 @@
 import React from 'react'
 import './ArticleCard.css'
+import { Link } from 'react-router-dom'
 
-function ArticleCard ({}) {
+function ArticleCard ({id, title, size, imgSrc, excerpt, author, date}) {
   return (
-    <div className='articleCard'>
-        <img src='' alt=''></img>
+    <div className={`articleCard ${size}`}>
+        <img src={imgSrc} alt={title}></img>
         <div>
-            <h3>title</h3>
-            <p>excerpt</p>
+            <h3>{title}</h3>
+            <p>{excerpt}</p>
             <div className='aut_date'>
-                <p>Author</p>
-                <p>date</p>
+                <p>{author}</p>
+                <p>{date}</p>
             </div>
-            
+            <Link to={`/blog/${id}`} className='readmore'>Read More</Link>
         </div>
     </div>
   )

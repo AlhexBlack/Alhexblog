@@ -7,12 +7,13 @@ import MaintenanceTips from './pages/MaintenanceTips';
 import LatestNews from './pages/LatestNews';
 import BuyingGuides from './pages/BuyingGuides';
 import ElectricVehicles from './pages/ElectricVehicles';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import { useState } from 'react';
 import SearchBar from './components/SearchBar';
+import ArticleDetails from './components/ArticleDetails';
 
 function App() {
   const [searchResults, setSearchResults] = useState(null);
@@ -31,7 +32,9 @@ function App() {
               searchResults.length > 0 ? (
               <ul>
                 {searchResults.map((post) => (
-                  <li key={post.id}>{post.title}</li>
+                  <li key={post.id}>
+                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                    </li>
                 ))}
               </ul>
               ) : (
@@ -49,6 +52,7 @@ function App() {
                 <Route path='/electric_vehicles' element={<ElectricVehicles/>}/>
                 <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
                 <Route path='/terms-of-service' element={<TermsOfService/>}/>
+                <Route path='/blog/:id' element={<ArticleDetails/>}/>
                 <Route path='*' element={<NotFound/>}/>
               </Routes>
             </main>
