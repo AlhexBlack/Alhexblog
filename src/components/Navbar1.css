@@ -10,10 +10,8 @@ nav{
     width: 100%;
     z-index: 1000;
     height: 10vh;
-    backdrop-filter: blur(200px);
-    -webkit-backdrop-filter: blur(200px);
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.233);
-    background-color: rgba(237, 242, 244, 0.267);
+    background-color: rgb(237, 242, 244);
 }
 div nav div{
     display: flex;
@@ -102,4 +100,11 @@ div nav ul li a:hover{
         align-items: center;
     }
 
+}
+@media (min-width: 1001px) {
+    nav{
+        backdrop-filter: blur(200px);
+        -webkit-backdrop-filter: blur(200px);
+        background-color: rgba(237, 242, 244, 0.267);
+    }
 }
