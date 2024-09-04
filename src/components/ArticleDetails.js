@@ -12,11 +12,11 @@ function ArticleDetails () {
   }
 
   return (
-    <div>
+    <article>
       <h1>{post.title}</h1>
       <img src={post.imgSrc} alt={post.title}/>
-      <p>{post.content}</p>
-    </div>
+      <p className='articleContent'>{post.content}</p>
+    </article>
   )
 }
 

@@ -76,9 +76,12 @@ div nav ul li a:hover{
     cursor: pointer;
     padding: 5px 10px;
 }
-.hamburger:hover{
+.bar{
+    padding: 10px;
+    border-radius: 5px;
+}
+.bar:hover{
     background-color: rgba(239, 35, 59, 0.486);
-    border-radius: 5px; 
 }
 .cancel:hover{
     border-radius: 5px; 
