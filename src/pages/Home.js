@@ -5,7 +5,7 @@ import './Home.css'
 import Pagination from '../components/pagination'
 import blogPosts from '../data/blogData'
 
-const ARTICLES_PER_PAGE = 20;
+const ARTICLES_PER_PAGE = 10;
 
 function Home () {
   const [currentPage, setCurrentPage] = useState(1);

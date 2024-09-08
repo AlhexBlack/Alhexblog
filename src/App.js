@@ -14,6 +14,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import ArticleDetails from './components/ArticleDetails';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [searchResults, setSearchResults] = useState(null);
@@ -21,28 +22,42 @@ function App() {
   const handleSearchResults = (results) => {
     setSearchResults(results);
   };  
+
+  const handleClearSearch = () => {
+    setSearchResults(null);
+  }
   
   return (
     <Router>
+      <ScrollToTop/>
     <div className='app'>
         <Navbar1 onSearchResults={handleSearchResults}/>
             <main>
             <SearchBar onSearchResults={handleSearchResults}/>
-              {searchResults !== null ? (
-              searchResults.length > 0 ? (
-              <ul>
-                {searchResults.map((post) => (
-                  <li key={post.id}>
-                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
-                    </li>
-                ))}
-              </ul>
-              ) : (
-                <p>No results found</p>
-              )
-              ) : (
-                <></> 
-              )}
+            <div className='searchResults'>
+                  {searchResults !== null ? (
+                  searchResults.length > 0 ? (
+                  <ul className='searchList'>
+                  <div className='clearDiv'>
+                    <h3>Search Results:</h3>
+                    <button className='clearButton' onClick={handleClearSearch}>Clear</button>
+                  </div>
+                    {searchResults.map((post) => (
+                      <li key={post.id}>
+                        <Link to={`/blog/${post.id}`} onClick={handleClearSearch}>{post.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                  ) : (
+                    <div className='noResults'>
+                    <p>No results found</p>
+                    <button className='clearButton' onClick={handleClearSearch}>Close</button>
+                    </div>
+                  )
+                  ) : (
+                    <></> 
+                  )}
+            </div>
               <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/car_reviews' element={<CarReviews/>}/>

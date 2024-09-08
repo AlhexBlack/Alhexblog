@@ -70,7 +70,7 @@ span{
     flex-direction: column;
 }
 }
-@media (max-width : 1300px){
+@media (max-width : 980px){
     .footer-content{
         flex-direction: column;
     }

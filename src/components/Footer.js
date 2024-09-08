@@ -1,9 +1,8 @@
 import React from 'react';
 import './Footer.css'
 import { Link} from 'react-router-dom';
-import SearchBar from './SearchBar';
 
-function Footer ({onSearchResults}) {
+const Footer = () => {
   return (
     <div>
     <footer>
@@ -48,9 +47,7 @@ function Footer ({onSearchResults}) {
          </div>  
  
 
-        <div className="legal-links">
-            <SearchBar onSearchResults={onSearchResults}/>
-        </div>
+
         </div>
         <div className='contact-us'>
           <li><Link to="/privacy-policy">Privacy Policy</Link></li>

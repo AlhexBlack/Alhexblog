@@ -1,9 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ArticleCard from '../components/ArticleCard'
+import Pagination from '../components/pagination'
+import blogPosts from '../data/blogData'
 
-const BuyingGuides = () => {
+const ARTICLES_PER_PAGE = 10;
+
+const buyingGuide = blogPosts.filter(post => post.category === 'Buying Guide');
+
+function Home() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const indexOfLastArticle = currentPage * ARTICLES_PER_PAGE;
+  const indexOfFirstArticle = indexOfLastArticle - ARTICLES_PER_PAGE;
+  const currentArticles = buyingGuide.slice(indexOfFirstArticle, indexOfLastArticle);
+  const totalPages = Math.ceil(buyingGuide.length / ARTICLES_PER_PAGE);
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  }
+
   return (
-    <div>BuyingGuides</div>
+    <div>
+      <div className='cardCont'>
+        {currentArticles.map((post) => (
+          <ArticleCard
+            key={post.id}
+            id={post.id}
+            imgSrc={post.imgSrc}
+            title={post.title}
+            excerpt={post.excerpt}
+            author={post.author}
+            date={post.date}
+          />
+        ))}
+      </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange} />
+    </div>
   )
 }
 
-export default BuyingGuides
+export default Home

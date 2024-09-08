@@ -57,3 +57,91 @@
 .articleInfo{
     line-height: 1.2;
 }
+
+/* 
+SMALL CARD DESIGN
+SMALL CARD DESIGN
+SMALL CARD DESIGN
+SMALL CARD DESIGN */
+
+.articleCard.small {
+    width: 100%;
+    overflow: hidden;
+    height: 10vh;
+    background-color: rgba(141, 153, 174, 0.637);
+    border-radius: 10px 10px 10px 10px;
+    color: black;
+    box-shadow: 0 0 20px rgba(143, 143, 143, 0.493);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.small .img img {
+    height: 10vh;
+    width: fit-content;
+    padding: 0;
+}
+.small .img{
+    height: 10vh;
+    width: fit-content;
+    padding: 0;
+}
+.small .readmore {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    right: 3vh;
+    font-size: small;
+    padding: 0 5vw;
+    background-color: rgba(43, 45, 66, 0.726);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 20px rgba(43, 45, 66, 0.658);
+}
+.small .articleInfo {
+    padding: 0;
+    width: 60vw;
+    font-size: 0.7rem;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (min-width:980px) {
+    .articleCard.small{
+        padding: 0;
+    }
+    .small .articleInfo {
+        font-size: 0.5rem;
+    }
+}
+
+/* .small .title {
+    height: fit-content;
+    padding: 0;
+    font-size: small;
+} */
+
+
+/* .small .readmore a {
+    color: rgb(141, 153, 174);
+    text-decoration: none;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.small .faRight {
+    font-size: small;
+    margin-top: 4.5px;
+} */
+
+
+
+/* .small .readmore:hover {
+    cursor: pointer;
+    background-color: rgb(43, 45, 66);
+} */
+
