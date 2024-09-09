@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link} from 'react-router-dom';
 import './CookieConsent.css';
 
 function CookieConsent() {
@@ -21,9 +22,9 @@ function CookieConsent() {
             <div className="cookie-consent">
                 <p>
                     This website uses cookies to ensure you get the best experience on our website.{' '}
-                    <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+                    <Link to ="/privacy-policy" target="_blank" rel="noopener noreferrer">
                         Learn more
-                    </a>
+                    </Link>
                 </p>
                 <button onClick={handleAcceptCookies} className="accept-btn">
                     Accept Cookies
