@@ -14,8 +14,9 @@
 }
 .cards{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 1vh;
 }
 
@@ -33,6 +34,8 @@
         width: 30vw;
     }
     .cards{
+        flex-wrap: nowrap;
+        flex-direction: column;
         gap: 5vh;
     }
 }

@@ -59,6 +59,7 @@ span{
 .contact-us li a{
     text-decoration: none;
     color: white;
+    line-height: 2;
 }
 .contact-us {
     list-style: none;

@@ -15,6 +15,7 @@ import { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import ArticleDetails from './components/ArticleDetails';
 import ScrollToTop from './components/ScrollToTop';
+import CookieConsent from './components/CookieConsent';
 
 function App() {
   const [searchResults, setSearchResults] = useState(null);
@@ -72,6 +73,7 @@ function App() {
               </Routes>
             </main>
           <Footer onSearchResults={handleSearchResults}/>  
+          <CookieConsent/>
           </div>
           </Router>
   );

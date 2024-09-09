@@ -65,26 +65,24 @@ SMALL CARD DESIGN
 SMALL CARD DESIGN */
 
 .articleCard.small {
-    width: 100%;
+    width: 30vh;
     overflow: hidden;
-    height: 10vh;
+    height: 20vh;
     background-color: rgba(141, 153, 174, 0.637);
     border-radius: 10px 10px 10px 10px;
     color: black;
     box-shadow: 0 0 20px rgba(143, 143, 143, 0.493);
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
 }
 
 .small .img img {
-    height: 10vh;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     padding: 0;
 }
 .small .img{
-    height: 10vh;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
     padding: 0;
 }
 .small .readmore {
@@ -99,6 +97,7 @@ SMALL CARD DESIGN */
     box-shadow: 0 0 20px rgba(43, 45, 66, 0.658);
 }
 .small .articleInfo {
+    display: none;
     padding: 0;
     width: 60vw;
     font-size: 0.7rem;
@@ -115,33 +114,9 @@ SMALL CARD DESIGN */
         font-size: 0.5rem;
     }
 }
-
-/* .small .title {
-    height: fit-content;
-    padding: 0;
-    font-size: small;
-} */
-
-
-/* .small .readmore a {
-    color: rgb(141, 153, 174);
-    text-decoration: none;
-    font-size: small;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+@media (max-width: 750px) {
+    .articleCard.small{
+        height: 18vh;
+        width: 26vh;
+    }
 }
-
-.small .faRight {
-    font-size: small;
-    margin-top: 4.5px;
-} */
-
-
-
-/* .small .readmore:hover {
-    cursor: pointer;
-    background-color: rgb(43, 45, 66);
-} */
-
