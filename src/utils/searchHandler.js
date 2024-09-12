@@ -1,12 +1,19 @@
 import blogPosts from '../data/blogData'
 
+const stripHtmlTags = (text) => {
+  const doc = new DOMParser().parseFromString(text, 'text/html');
+  return doc.body.textContent || ""
+};
+
 export const searchBlogs = (query) => {
     if (!query) return [];
-  return blogPosts.filter(
-    (post) =>
-        post.title.toLowerCase().includes(query.toLowerCase()) || 
-    post.content.toLowerCase().includes(query.toLowerCase())
-  )
-}
 
-export default searchBlogs
+  const lowerQuery = query.toLowerCase();
+
+  return blogPosts.filter( (post) =>
+
+      post.title.toLowerCase().includes(lowerQuery) || stripHtmlTags(post.content).toLowerCase().includes(lowerQuery)
+    );
+};
+
+export default searchBlogs;

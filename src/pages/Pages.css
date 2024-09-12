@@ -48,3 +48,31 @@ a{
     text-decoration: none;
     color: rgb(239, 35, 60);
 }
+.adsense-container {
+    margin: 20px 0;
+    text-align: center;
+}
+.about-container {
+    padding: 20px;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.heading {
+    color: rgb(239, 35, 60);
+}
+
+.texts {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(43, 45, 66);
+}
+
+.gmail {
+    color: rgb(239, 35, 60);
+    text-decoration: none;
+}
+
+.gmail:hover {
+    text-decoration: underline;
+}

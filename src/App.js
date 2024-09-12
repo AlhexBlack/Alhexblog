@@ -16,6 +16,8 @@ import SearchBar from './components/SearchBar';
 import ArticleDetails from './components/ArticleDetails';
 import ScrollToTop from './components/ScrollToTop';
 import CookieConsent from './components/CookieConsent';
+import AboutUs from './pages/AboutUs'
+import Adsense from 'react-adsense';
 
 function App() {
   const [searchResults, setSearchResults] = useState(null);
@@ -58,6 +60,16 @@ function App() {
                   ) : (
                     <></> 
                   )}
+
+            {/* ad component starts here */}
+            <Adsense.Google
+              client='ca-pub-XXXXXX'
+              slot='XXXXXX'
+              style={{ display: 'block' }}
+              format='auto'
+              responsive='true'
+            />
+            {/* ad component ends here */}
             </div>
               <Routes>
                 <Route path='/' element={<Home/>}/>
@@ -68,6 +80,7 @@ function App() {
                 <Route path='/electric_vehicles' element={<ElectricVehicles/>}/>
                 <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
                 <Route path='/terms-of-service' element={<TermsOfService/>}/>
+                <Route path='/about-us' element={<AboutUs/>}/>
                 <Route path='/blog/:id' element={<ArticleDetails/>}/>
                 <Route path='*' element={<NotFound/>}/>
               </Routes>

@@ -32,6 +32,9 @@
     }
     .sideCont {
         width: 30vw;
+        background-color: #EDF2F4;
+        box-shadow: 0 0 30px #ced6da;
+        border-radius: 1vw;
     }
     .cards{
         flex-wrap: nowrap;
@@ -42,6 +45,7 @@
 
 .imgAd{
     width: 100%;
+    border-radius: 1vw;
 }
 .excerptAd{
     color: rgb(43, 45, 66);
