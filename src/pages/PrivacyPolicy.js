@@ -22,7 +22,14 @@ function PrivacyPolicy() {
       <h2>3. Cookies</h2>
       <p>
         Our site uses cookies to enhance your browsing experience. Cookies help us understand how users interact with our
-        website, and you can choose to disable cookies through your browser settings.
+        website, including through tools like Google Analytics, which uses cookies to collect anonymous data about your visits.
+        Google AdSense may also use cookies to deliver personalized ads based on user behavior.
+      </p>
+      <p>
+        You can disable cookies through your browser settings or opt-out of personalized ads through <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google’s Ad Settings</a>.
+      </p>
+      <p>
+        When you visit our site, you will see a notification to manage your cookie preferences. You can choose to allow or disable certain types of cookies according to your preferences.
       </p>
 
       <h2>4. Third-Party Services</h2>
@@ -39,9 +46,10 @@ function PrivacyPolicy() {
 
       <h2>6. Google AdSense and Analytics</h2>
       <p>
-        We use Google AdSense to display ads, and Google Analytics to track user activity on our website. Google may use
-        cookies and tracking data to deliver personalized ads based on user behavior. For more information, review
-        Google's Privacy Policy.
+        We use Google AdSense to display ads and Google Analytics to track user activity on our website. Google Analytics collects data on users’ browsing behavior, including IP addresses, browser types, and interactions with our site, to help us improve the user experience. This information is collected anonymously, and Google Analytics does not share any personally identifiable information.
+      </p>
+      <p>
+        To learn more about how Google uses this data or to opt out, visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s Privacy Policy</a> and the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.
       </p>
 
       <h2>7. User Rights</h2>
