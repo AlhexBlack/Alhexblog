@@ -53,7 +53,7 @@ const Footer = () => {
           <li><Link to="/privacy-policy">Privacy Policy</Link></li>
           <li><Link to="/terms-of-service">Terms of Service</Link></li>
           <li><Link to="/about-us">About Us</Link></li>
-          <p>Contact us: <a href="mailto:motormentor@gmail.com">motormentor@gmail.com</a></p>
+          <p>Contact us: <a href="mailto:motormentorhub@gmail.com">motormentorhub@gmail.com</a></p>
           <p>&copy; 2024 MotorMentor. All rights reserved.</p>
         </div> 
     </footer>

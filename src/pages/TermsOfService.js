@@ -43,7 +43,7 @@ function TermsOfService() {
         this page periodically for updates.
       </p>
 
-      <p>If you have any questions or concerns regarding these Terms of Service, please contact us at <a href="mailto:motormentor@gmail.com">motormentor@gmail.com</a>.</p>
+      <p>If you have any questions or concerns regarding these Terms of Service, please contact us at <a href="mailto:motormentorhub@gmail.com">motormentorhub@gmail.com</a>.</p>
     </div>
   );
 }

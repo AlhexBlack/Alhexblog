@@ -47,7 +47,7 @@ function PrivacyPolicy() {
       <h2>7. User Rights</h2>
       <p>
         You have the right to access, update, or request deletion of your personal data. To exercise these rights,
-        contact us at <a href="mailto:motormentor@gmail.com">motormentor@gmail.com</a>.
+        contact us at <a href="mailto:motormentorhub@gmail.com">motormentorhub@gmail.com</a>.
       </p>
 
       <h2>8. Changes to This Privacy Policy</h2>
@@ -56,7 +56,7 @@ function PrivacyPolicy() {
         Continued use of our website after any modifications indicate acceptance of the updated policy.
       </p>
 
-      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:motormentor@gmail.com">motormentor@gmail.com</a></p>
+      <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:motormentorhub@gmail.com">motormentorhub@gmail.com</a></p>
     </div>
   );
 }
