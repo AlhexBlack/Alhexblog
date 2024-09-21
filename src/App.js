@@ -17,7 +17,7 @@ import ArticleDetails from './components/ArticleDetails';
 import ScrollToTop from './components/ScrollToTop';
 import CookieConsent from './components/CookieConsent';
 import AboutUs from './pages/AboutUs'
-import Adsense from 'react-adsense';
+import AdSense from 'react-adsense';
 
 function App() {
   const [searchResults, setSearchResults] = useState(null);
@@ -62,7 +62,7 @@ function App() {
                   )}
 
             {/* ad component starts here */}
-            <Adsense.Google
+            <AdSense.Google
               client='ca-pub-XXXXXX'
               slot='XXXXXX'
               style={{ display: 'block' }}
@@ -70,6 +70,7 @@ function App() {
               responsive='true'
             />
             {/* ad component ends here */}
+
             </div>
               <Routes>
                 <Route path='/' element={<Home/>}/>
